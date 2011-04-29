@@ -1,0 +1,37 @@
+.vmenu{    
+    position:absolute;    
+    display:none;    
+}
+
+.vmenu .first_li a{
+    width:140px;
+    display:block;
+    padding:5px 10px;
+    cursor:pointer
+}
+
+.vmenu .first_li a span{
+    float: left;
+    margin-right: 5px;
+}
+
+.vmenu .inner_li{
+    display:none;
+    margin-left:120px;
+    position:absolute;    
+    margin-top:-28px;
+    
+}
+
+.vmenu .sep_li{    
+    padding:5px 0
+}
+
+.vmenu .fill_title{
+    
+    height:15px;
+    overflow:hidden;
+
+    word-wrap:break-word;
+}
+

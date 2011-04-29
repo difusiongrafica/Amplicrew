@@ -1,0 +1,20 @@
+#contenido-cabecera{
+    background: #000;
+    border-bottom: 8px solid #a3804d;
+    height: 158px;
+}
+
+#cabecera{
+    margin: auto;
+    width: 976px;
+
+}
+
+h1#logo{
+    background: url('../img/cabecera.jpg') no-repeat;
+    width: 976px;
+    height: 158px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-indent: -5000px;
+}

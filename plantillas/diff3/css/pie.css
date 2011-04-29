@@ -1,0 +1,53 @@
+#pie {
+    margin: auto;
+    margin-top: 20px;
+    width: 927px;
+}
+
+#pie hr{
+    margin: 0px;
+    border-bottom: 1px solid #d2d0d0;
+}
+
+#pie #firma {
+    padding-top: 0px;
+    height: 33px;    
+   
+}
+
+#firma .copy {    
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    font-size: 11px;
+    color: #d2d0d0;
+    font-style: italic;
+}
+
+#firma .copy img{
+    position: relative;
+    top: 7px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+#firma .difusion {   
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    font-size: 11px;    
+    margin-right: 0px;
+    color:  #d2d0d0;
+}
+
+#firma .difusion a {
+    font-family: "Times New Roman", times, serif;
+    text-decoration: none;
+    color: #d2d0d0;
+    font-style: italic;
+
+}
+
+#firma .difusion a:hover {
+    color: #fff;
+}

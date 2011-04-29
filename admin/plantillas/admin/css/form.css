@@ -1,0 +1,113 @@
+/* 
+    Document   : form
+    Created on : 07-sep-2010, 18:28:57
+    Author     : javi
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+label{
+    display: block;
+    font-weight: bold;
+}
+
+#form {
+    padding: 10px;
+}
+
+#form #bloque-form{
+   vertical-align: top;
+}
+
+#form #barra-widgets{
+    width: 240px;
+    padding-top: 15px;
+    vertical-align: top;
+}
+
+#form .clear{
+    clear: both;
+}
+
+#form fieldset{
+    padding: 10px;
+    width: 93%;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    
+}
+
+#form legend{
+    color: #fff;
+}
+
+#form textarea{
+   
+   margin-bottom: 15px;
+   padding:  4px;
+   margin-bottom: 15px;
+   display: block;
+   width: 100%;
+}
+
+#form input{
+    position: relative;
+    padding:  4px;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;    
+}
+
+#form select{
+    margin-bottom: 10px;
+}
+
+#form option{
+    padding: 4px;   
+    display: block;
+    width: 100%;    
+}
+
+#form legend{
+    font-weight: bold;
+}
+
+#form fieldset{
+    padding:  10px;
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+}
+
+#form input.titulo{
+    font-size: 20px;
+}
+
+#form input[type="checkbox"]{
+    width: 20px;
+}
+
+#form #barra-widgets{
+    width: 260px;
+    padding-left: 20px;
+}
+
+#form #barra-widgets div.ui-widget{
+    margin-bottom: 20px;    
+}
+
+#form #barra-widgets div.ui-widget div{
+    border-top: 0px !important;
+    padding: 5px;
+}
+
+#form #barra-widgets div.ui-widget h3{
+    padding: 5px;
+}
+

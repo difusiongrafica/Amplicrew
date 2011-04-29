@@ -1,0 +1,47 @@
+h2 {    
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+
+    padding: 0 2px 8px 2px;
+
+    font-weight: normal;
+    line-height: 17px;
+    margin-bottom: 15px;
+
+
+}
+
+h3{
+    text-transform: uppercase;
+    font-weight: normal;
+    
+    font-size: 14px;
+    line-height: 18px;
+    color: #a3804d;
+}
+
+h4{
+    margin-bottom: 15px;
+}
+
+
+a:link, a:visited{
+    color: #a9874f;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+a:hover, a:active{
+    color: #fff;
+}
+
+hr{
+    border-bottom: #a9874f 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 22px;
+}

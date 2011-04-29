@@ -1,0 +1,13 @@
+#barra{
+    background: url('../img/fondo-widget.png') repeat-x;
+    width: 235px;
+    float: left;
+    border: double 6px #a9874f;
+    padding: 25px;
+    padding-top: 10px;
+
+}
+
+#barra .img{
+    margin-right: 0px !important;
+}

@@ -1,0 +1,140 @@
+/* 
+    Document   : estilo
+    Created on : 01-sep-2010, 17:13:40
+    Author     : javierclavain
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+#barra h2, #barra h4{
+    font-family: "Times New Roman",  Times, serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    line-height: 18px;
+    padding: 0px;
+    margin-bottom: 0px;
+    font-weight: normal;
+}
+
+#barra h3{
+    font-family: "Times New Roman", Times, serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: white;
+    padding-bottom: 5px;
+    font-weight: normal;
+    margin-bottom: 10px;   
+   
+}
+
+#barra hr{
+    margin-top: 0px;
+    margin-bottom: 19px;
+}
+
+#barra ul{
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+#barra ul li{
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#barra a.enlace{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    display: block;
+}
+
+#barra a.icono{
+    width: 113px;
+    height: 34px;
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    margin-bottom: 15px;
+    
+    text-indent: -50000px;
+}
+
+#barra a.primero{
+    margin-right: 20px;
+}
+
+#barra a.icono:hover{
+    background-position: 0px -34px ;
+}
+
+
+#barra a.contacto{
+    background-image: url('../../../img/icon_contacto.png');
+}
+
+#barra a.blog{
+    background-image: url('../../../img/icon_blog.png');
+}
+
+#barra a.facebook{
+    background-image: url('../../../img/icon_facebook.png');
+}
+
+#barra a.twitter{
+    background-image: url('../../../img/icon_twitter.png');
+}
+
+#barra a.spotify{
+    background-image: url('../../../img/icon_spotify.png');
+}
+
+#barra p{
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+#barra .img{
+    border: 4px solid #A4814A;
+    float: left;
+    margin-bottom: 20px;
+}
+
+#slide2 {
+    position: relative;    
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border: 4px solid #A4814A;
+    
+}
+
+#slide2 a {
+    position: absolute;
+    padding-top: 0px;
+    width: 227px;
+    z-index: 8;
+   
+}
+
+#slide2 a.active {
+    z-index: 10;
+}
+
+#slide2 a.last-active {
+    z-index: 9;
+}
+
+.img-i{
+    border: 3px solid #A4814A;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    float: left;
+}

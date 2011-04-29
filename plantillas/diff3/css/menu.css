@@ -1,0 +1,24 @@
+#menu{
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 936px;
+    line-height: 20px;
+    display: table;
+    
+}
+
+#menu a:link, #menu a:visited{
+    color: #a9874f;
+    font-family: "Times New Roman", times, serif;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 31px;
+    text-transform: uppercase;
+    
+    
+}
+
+#menu a:active, #menu a:hover, #menu a.active{
+    color: #fff;
+}
