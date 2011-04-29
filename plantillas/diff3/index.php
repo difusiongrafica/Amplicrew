@@ -47,6 +47,10 @@
         <div id="pie"><? echo mostrarComponente('pie'); ?></div>
         <!-- fin contenedor -->
         
+        <? if ($app->debug): ?>
+        <div id="debug"><? echo $app->debug_info; ?></div>
+        <? endif; ?>
+        
         <div id="fb-root"></div>
         <script type="text/javascript">
             window.fbAsyncInit = function() {

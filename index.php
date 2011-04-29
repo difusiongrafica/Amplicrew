@@ -16,6 +16,8 @@ include('config.php');
 include('app.class.php');
 $app = new app($nombre_app, $metades, $metatags, $default_lan, $plantilla, $db_host, $db_name, $db_user, $db_pass, $carpeta);
 
+$app->debug = false; //Modo debug
+
 if ($app->ruta_base == 'http://difusiongrafica.com'){    //redirección
     header ("Location: http://www.difusiongrafica.com");
 }

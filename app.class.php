@@ -38,8 +38,13 @@ class app {
     var $componentes;
     /* Variables de integración con aplicaciones externas */
     var $google_analitics;
+    /* MODO DEBUG - Muestra mensajes de información para ayudar al desarrollo y correccion de la aplicacion */
+    var $debug;
+    var $debug_info;
 
     public function __construct($nombre_app, $metades, $metatags, $default_lan, $plantilla, $db_host, $db_name, $db_user, $db_pass, $carpeta) {
+        $this->debug = false;
+        
         $this->nombre_app = $nombre_app;
         $this->metades = $metades;
         $this->metatags = $metatags;

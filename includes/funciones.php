@@ -118,13 +118,76 @@ function cargarClases($ruta) {
 }
 
 function cargarCss(){
+    global $app;
+    if ($app->debug){ 
+        $app->debug_info .= 'funcion: cargarCss()<br/> llamada a cargarFicheros<br/>';        
+    }
+    $f = cargarFicheros('css'); 
+    
+    foreach($f as $fich){
+        echo '<link type="text/css" rel="stylesheet" href="'.$fich.'" media="screen" charset="ISO-8859-1" />
+            ';
+    }
+    
 }
 
 function cargarJs(){
+    global $app;
+    if ($app->debug){ 
+        $app->debug_info .= 'funcion: cargarJs()<br/> llamada a cargarFicheros<br/>';        
+    }
+    $f = cargarFicheros('js');
+    
+    foreach($f as $fich){
+        echo '<script type="text/javascript" src="'.$fich.'"></script>
+            ';
+    }
+    
 }
 
 
-function cargarFicheros($ruta,$extension){
+function cargarFicheros($extension){
+    global $app;
+    
+    $r_plantilla = $app->ruta_absoluta.'/plantillas/'.$app->plantilla.'/'.$extension.'/';
+    $url_plantilla = $app->ruta_plantilla.'/'.$extension.'/';
+    
+    if ($app->debug){ 
+        $app->debug_info .= 'funcion: cargarFicheros($extension)<br/> Datos:<br/>';
+        $app->debug_info .= '$r_plantilla: '.$r_plantilla.'<br/>';
+        $app->debug_info .= '$url_plantilla.'.$url_plantilla.'<br/> Añadiendo ficheros: ';
+    }
+    
+    $r = opendir($r_plantilla);
+    while($file = readdir($r)){
+        if(preg_match("/.$extension$/",$file)){
+            if($app->debug){
+                $app->debug_info .= 'Fichero añadido: '. $url_plantilla.$file.'<br/>';
+            }
+            $ficheros[] = $url_plantilla.$file;
+        }
+    }    
+    
+    $f_general = $app->ruta_absoluta.'/componentes/'.$app->seccion.'/'.$extension.'/general.'.$extension;
+    $url_general = $app->ruta_componentes.'/'.$app->seccion.'/'.$extension.'/general'.$extension;
+    
+    $f_accion = $app->ruta_absoluta.'/componentes/'.$app->seccion.'/'.$extension.'/'.$app->accion.'.'.$extension;
+    $url_accion = $app->ruta_componentes.'/'.$app->seccion.'/'.$extension.'/'.$app->accion.'.'.$extension;
+    
+    if(file_exists($f_general)){
+        $ficheros[] = $url_general;
+    }
+    
+    if(file_exists($f_accion)){
+        $ficheros[] = $url_accion;
+    }
+    
+    if($app->debug){
+        $app->debug_info .= '<hr/>';
+    }
+    
+    return $ficheros;
+    
 }
 
 
